@@ -3,11 +3,13 @@
 require "rails_helper"
 
 describe "Testing api/v1/user", :type => :request do
-  describe "Testing /api/v1/user/me with no log in user" do
+  describe "Testing user/me with no log in user" do
     before { get "/api/v1/user/me" }
+
     it "returns status code 401" do
       expect(response).to have_http_status(401)
     end
+
     it "returns error" do
       expected = {
         "error": "Not Authorized"
@@ -16,7 +18,7 @@ describe "Testing api/v1/user", :type => :request do
     end
   end
 
-  describe "Testing /api/v1/user/me with correct user token" do
+  describe "Testing user/me with correct user token" do
     let!(:user) { FactoryBot.create(:user) }
 
     before do
@@ -27,6 +29,7 @@ describe "Testing api/v1/user", :type => :request do
     it "returns status code 200" do
       expect(response).to have_http_status(200)
     end
+
     it "returns user" do
       expect(JSON.parse(response.body)).to have_key("user")
     end

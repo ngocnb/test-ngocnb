@@ -10,7 +10,12 @@ module Api
         graph = Koala::Facebook::API.new(params[:token])
 
         profile = graph.get_object("me", fields: "id, name, email, picture", )
-        password = '12345678' # default password
+        if (profile.key?("error"))
+          render json: { error: 'Facebook authorization failed' }, status: :unauthorized
+          return
+        end
+
+        password = "12345678" # default password
 
         user = User.where(email: profile["email"], uid: profile["id"]).first_or_initialize.tap do |user|
           user.email = profile["email"]
