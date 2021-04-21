@@ -2,6 +2,7 @@
 
 Ruby version: 2.5.3
 
+-   Change database config in `config/database.yml`
 -   Create database named `sugaro_backend_development` and `sugaro_backend_test`
 -   Run the following commands
 
@@ -18,7 +19,6 @@ FB_APP_ID: "4165154470218070"
 FB_APP_SECRET: "e0d49cde624cdf75c9df9b60e7556db7"
 ```
 
--   Change database config in `config/database.yml`
 -   Start server
 
 ```
