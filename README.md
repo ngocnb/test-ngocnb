@@ -15,6 +15,8 @@
 
 ![Set password](https://github.com/ngocnb/test-ngocnb/blob/test/docs/images/013.png?raw=true)
 
+The tester user will be used in frontend `.env` file.
+
 ### Install chromedriver for automated integration testing
 
 -   Download driver file: http://chromedriver.storage.googleapis.com/index.html
