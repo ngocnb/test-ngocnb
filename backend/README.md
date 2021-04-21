@@ -1,5 +1,3 @@
-# README
-
 ## Installation
 
 Ruby version: 2.5.3

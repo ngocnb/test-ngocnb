@@ -1,5 +1,3 @@
-# README
-
 ## Installation
 
 NodeJS version: v14.15.4
