@@ -39,6 +39,10 @@ describe "Testing api/v1/auth", :type => :request do
     it "returns token" do
       expect(response.body).to include("token")
     end
+
+    it "user increase by 1" do
+      expect(User.count).to eq(1)
+    end
   end
 
   describe "auth/facebook log in failed" do
@@ -75,6 +79,10 @@ describe "Testing api/v1/auth", :type => :request do
         "error": "Facebook authorization failed"
       }.to_json
       expect(response.body).to eq(expected)
+    end
+
+    it "no new user is created" do
+      expect(User.count).to eq(0)
     end
   end
 end
