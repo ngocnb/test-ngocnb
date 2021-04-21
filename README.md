@@ -32,6 +32,10 @@ Please read installation and how to run in [frontend readme](frontend/README.md)
 
 ## Run app evidence
 
+### Run app
+
+https://user-images.githubusercontent.com/1509762/115576429-af7bb100-a2ed-11eb-8e2b-0d73a3c1a74c.mp4
+
 ### Cucumber test
 
 https://user-images.githubusercontent.com/1509762/115531330-d79feb80-a2be-11eb-8983-de050d524e61.mp4
