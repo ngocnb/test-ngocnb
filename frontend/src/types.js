@@ -1,0 +1,4 @@
+export const FACEBOOK_LOGIN = "FACEBOOK_LOGIN";
+export const FETCH_CURRENT_USER = "FETCH_CURRENT_USER";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const SET_TOKEN = "SET_TOKEN";
