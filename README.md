@@ -29,3 +29,14 @@ Please read installation and how to run in [backend readme](backend/README.md)
 ### Frontend
 
 Please read installation and how to run in [frontend readme](frontend/README.md)
+
+## Run app evidence
+
+### Cucumber test
+
+https://user-images.githubusercontent.com/1509762/115531330-d79feb80-a2be-11eb-8983-de050d524e61.mp4
+
+### Rspec test
+
+https://user-images.githubusercontent.com/1509762/115531404-f1413300-a2be-11eb-9170-2192268d12eb.mp4
+
